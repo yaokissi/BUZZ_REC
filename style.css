@@ -1,0 +1,581 @@
+body {
+	background-color:black ;
+margin:0;
+overflow:;
+ width: 100%;
+}
+
+/*#menu{
+	 font-family: fantasy;
+	 height: 150px;
+
+}*/
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+#logo_anime{
+	display: none;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px grey;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .15);
+    -webkit-box-shadow: inset 0 0 6px grey);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background:grey;
+}
+.topnav {
+  overflow: hidden;
+
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:white ;
+  float:  right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: fantasy;
+  transition: 0.5s;
+}
+
+.topnav a:hover {
+  color: grey;
+  transform : scale(1.2);
+
+}
+
+.topnav a.active {
+  background-color: rgba(255, 255, 255, .15);
+
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+	#log{
+		align: right;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+h1{
+	text-align: center;
+	font-family: fantasy;
+	color: black;
+	font-size: 50px;
+
+}
+a{
+	text-decoration: none;
+
+}
+#video_background{
+position:absolute ;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: 100%;
+height: auto;
+z-index: -1000;
+}
+/*ul {
+    list-style-type: none;
+    margin: ;
+    padding: ;
+    overflow: hidden;
+		width: 100%;
+
+	}
+li {
+    float: right;
+    line-height: 2.5px;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    transition:0.5s;
+    font-family: fantasy;
+		width: 100%;
+}
+
+li a:hover {
+   color: grey;
+   transform : scale(1.2);
+}
+*/
+hr{
+	height: 1px;
+    width: 100%;
+}
+/*.backimg{
+	width: 100%;
+	height: 100vh;
+	background-image: url('Music-Mic-Full-HD-Desktop-Wallpapers-3.jpg');
+    background-color:black;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    color: white;
+
+}
+#us{
+		background-image: url('microphone-dark-background-4k-5k-ui-2560x1700.jpg');
+		height: 450px;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+		width: 100%;
+}
+*/
+p{
+	font-family: fantasy;
+	font-size: 25px;
+	width: 100%;
+}
+.profile{
+
+	width:400px;
+    height: 450px;
+	background-color:rgba(255, 255, 255, .15);
+	padding: 30px 0;
+	border-radius:15% ;
+	transition:0.5s;
+	text-align: center;
+	position: center;
+
+}
+.profile:hover{
+	transform: scale(1.2);
+	background-color: black;
+}
+.artiste{
+	height: 250px;
+	border-radius: 70%;
+	width: 100%;
+
+}
+i{
+	color:white;
+	transition:0.5s;
+
+}
+a i:hover {
+	color:grey;
+	transform : scale(1.2);
+}
+
+.profiletext{
+	font-family:fantasy;
+}
+#our_stars{
+	background-color: white;
+	font-family: fantasy;
+	color: black;
+	font-size: 30px;
+	width: 100%;
+
+}
+#foot{
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	width: 100%;
+
+}
+#new{
+	background-color: white;
+	font-family: fantasy;
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+
+}
+
+
+#contacts{
+	background-color: white;
+	font-family: fantasy;
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+
+}
+.buton{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 30;
+    display: flex;
+    background-color: white;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    border-width: initial;
+    border-style: none;
+    border-color: black;
+    border-image: initial;
+    transition-property: background-color; /* Active la transition sur background-color */
+    transition-duration: 1.5s;
+}
+
+.buton:hover{
+    background-color: blue;
+    border-color: grey;
+    color: black;
+}
+#mail{
+	color: black;
+	background-color: transparent;
+	border-radius: 2px;
+	border: 1px solid;
+	cursor: pointer;
+	width: auto;
+
+}
+#follow_us{
+color: white;
+background-color: rgba(255, 255, 255, .15);
+text-align: center;
+width: 100%;
+
+
+}
+#tel{
+	color: white;
+	text-align: center;
+	font-family:fantasy;
+	font-size: 50px;
+	width: 100%;
+
+}
+/*SLIDES artists*/
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 100%;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+#text_artists{
+	font-family: fantasy;
+	color: black;
+	font-size: 50px;
+}
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+button{
+	cursor:pointer;
+	background-color: rgba(255, 255, 255, .15);
+  border-color: black;
+	height: 50px;
+	width: auto;
+	color: white;
+}
+#artistes {
+          overflow:hidden;
+          -webkit-border-radius:200px;
+          -moz-border-radius:200px;
+          border-radius:190px;
+          width:250px;
+          height:250px;
+          color: white;
+    }
+@media(min-width: 768px) and (max-width: 1388px)
+{
+	#global{
+		width: 100%;
+		padding: 0px;
+	}
+	#video_background{
+          display: none;
+				}
+				#logo_anime{
+				}
+				#logo_anime{
+					position:absolute ;
+					bottom: 0px;
+					right: 0px;
+					min-width: 100%;
+					min-height: 100%;
+					width: 100%;
+					height: auto;
+					z-index: -1000;
+				}
+	.topnav {
+	  overflow: hidden;
+	}
+#follow_us{
+	background-color:rgba(255, 255, 255, .15);
+}
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color:grey ;
+	  float:  right;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  font-family: fantasy;
+	  transition: 0.5s;
+	}
+
+	.topnav a:hover {
+	  color: grey;
+	 transform : scale(1.2);
+
+	}
+
+	.topnav a.active {
+	  background-color: rgba(255, 255, 255, .15);
+
+	  color: white;
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav a:not(:first-child) {display: none;}
+	  .topnav a.icon {
+	    float: right;
+	    display: block;
+	  }
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav.responsive {position: relative;}
+	  .topnav.responsive .icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	  }
+	  .topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: left;
+	  }
+	}
+}
+@media(max-width: 767px)
+
+{
+
+	#global{
+		width: 100%;
+		padding: 0px;
+	}
+
+	#video_background{
+display:none;
+	}
+	#logo_anime{
+		position:absolute ;
+		bottom: 0px;
+		right: 0px;
+		min-width: 100%;
+		min-height: 100%;
+		width: 100%;
+		height: auto;
+		z-index: -1000;
+	}
+	.topnav {
+	  overflow: hidden;
+
+	}
+
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color:grey ;
+	  float:  right;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  font-family: fantasy;
+	  /*transition: 0.5s;*/
+	}
+
+	.topnav a:hover {
+	  color: grey;
+	/*  transform : scale(1.2);*/
+
+	}
+
+	.topnav a.active {
+	  background-color: rgba(255, 255, 255, .15);
+
+	  color: white;
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav a:not(:first-child) {display: none;}
+	  .topnav a.icon {
+	    float: right;
+	    display: block;
+	  }
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav.responsive {position: relative;}
+	  .topnav.responsive .icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	  }
+	  .topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: left;
+	  }
+	}
+}
